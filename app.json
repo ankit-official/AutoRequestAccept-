@@ -35,7 +35,7 @@
         },
         "APPROVED_WELCOME_TEXT": {
             "description": "APPROVED_WELCOME_TEXT : Welcome Text",
-            "value": "Hello {mention}\nWelcome To {title}\n\nYour Auto Approved"
+            "value": "Hello {mention}\nWelcome To {title}\n\nʏᴏᴜ ᴀʀᴇ ᴀᴄᴄᴇᴘᴛᴇᴅ ɪɴ ᴏᴜʀ ᴘʀᴇᴍɪᴜᴍ ᴄʜᴀɴɴᴇʟ✨\n ꜰᴏʀ ᴍᴏʀᴇ ᴘʀᴇᴍɪᴜᴍ"
         }
     },
     "addons": [],
