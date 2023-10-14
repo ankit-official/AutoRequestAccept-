@@ -36,14 +36,14 @@ pr0fess0r_99=Client(
 )
 
 CHAT_ID = [int(pr0fess0r_99) for pr0fess0r_99 in environ.get("CHAT_ID", None).split()]
-TEXT = environ.get("APPROVED_WELCOME_TEXT", "Hello {mention}\nWelcome To {title}\n\nYour Auto Approved")
+TEXT = environ.get("APPROVED_WELCOME_TEXT", "Hello {mention}\nWelcome To {title}\n\nʏᴏᴜ ᴀʀᴇ ᴀᴄᴄᴇᴘᴛᴇᴅ ɪɴ ᴏᴜʀ ᴘʀᴇᴍɪᴜᴍ ᴄʜᴀɴɴᴇʟ✨\n ꜰᴏʀ ᴍᴏʀᴇ ᴘʀᴇᴍɪᴜᴍ ᴄᴏɴᴛᴇɴᴛ ᴊᴏɪɴ - [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/+gde9XAZ9FgpkZTI1)"
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 @pr0fess0r_99.on_message(filters.private & filters.command(["start"]))
 async def start(client: pr0fess0r_99, message: Message):
     approvedbot = await client.get_me() 
     button = [[ InlineKeyboardButton("🖤 ᴍʏ ᴄʜᴀɴɴᴇʟ", url="https://t.me/+gde9XAZ9FgpkZTI1"), InlineKeyboardButton("Öwñêr 💫", url="t.me/Watch_hindi_anime_bot") ],
-              [ InlineKeyboardButton("✨ Ｊｏｉｎ ⚡", url=f"http://t.me/{approvedbot.username}?startgroup=botstart") ]]
+              [ InlineKeyboardButton("✨ Ｊｏｉｎ ⚡", url=f"https://t.me/+gde9XAZ9FgpkZTI1") ]]
     await client.send_message(chat_id=message.chat.id, text=f"**__Hello {message.from_user.mention} Iam Auto Approver Join Request Bot Just [Add Me To Your Group Channnl](http://t.me/{approvedbot.username}?startgroup=botstart) || Repo https://github.com/PR0FESS0R-99/Auto-Approved-Bot||**__", reply_markup=InlineKeyboardMarkup(button), disable_web_page_preview=True)
 
 @pr0fess0r_99.on_chat_join_request((filters.group | filters.channel) & filters.chat(CHAT_ID) if CHAT_ID else (filters.group | filters.channel))
